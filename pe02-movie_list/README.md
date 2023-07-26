@@ -1,0 +1,6 @@
+# Input
+This program starts with an initial list of movies with title, genre, and releaseYear props. User selection filters the movies by genre, and users can also click on any of the movie objects.
+# Process
+The initial state of the movie object is set to the initial list. The initial state of the selectedGenre object is set to All Genres. When the genre selection is changed, first it sets a new selectedGenre, then it sets new selectedMovies from the initial list using an if-then statement. If the new selectedGenre is All Genres, the initial list of movies is set as the movie list, otherwise, the movie list is filtered by genre. An alert is processed on user click. 
+# Output
+The page initially renders the entire list of movies as list items. When one of the list items is clicked, an alert displays letting the user know the title of the movie they clicked on. When a different genre is selected, the page displays all of the movies with a matching genre prop. If the genre is "All Genres", the initial list is returned once again.
