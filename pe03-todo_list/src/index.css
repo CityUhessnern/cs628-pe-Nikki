@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: top
+}
+
+h1 {
+  text-align: center;
+  color: navy;
+  font-family:'Courier New', Courier, monospace;
+}
+
+label {
+  flex: 1;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+}
+
+.todo-card {
+  width: 300px;
+  background-color: #f9f9f9;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+}
+
+delete-button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+  margin: 2px;
+  align-items: left;
+  cursor: pointer;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: top
+}
+
+input {
+  height: 30px;
+  padding: 4px;
+  font-size: 14px;
+}
+
+input-button {
+  background-color: #0000ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px;
+  margin: 2px;
+  align-items: left;
+  cursor: pointer;
+}
