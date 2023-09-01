@@ -88,7 +88,7 @@ export default function Create() {
                 <div className="form-group">
                     <input
                         type="submit"
-                        value="Create Recipe"
+                        value="Create recipe"
                         className="btn btn-primary"
                     />
                 </div>

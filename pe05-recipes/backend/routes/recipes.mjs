@@ -24,14 +24,14 @@ router.get("/:id", async (req, res) => {
 // This section will help you create a new recipe.
 router.post("/", async (req, res) => {
   let newDocument = {
-    recipe: req.body.recipe,
+    recipeName: req.body.recipeName,
     ingredients: req.body.ingredients,
     instructions: req.body.instructions,
     notes: req.body.notes,
   };
   let collection = await db.collection("recipes");
   let result = await collection.insertOne(newDocument);
-  res.send(result).status(204);
+  res.send(result).status(201);
 });
 
 // This section will help you update a recipe by id.
@@ -39,7 +39,7 @@ router.patch("/:id", async (req, res) => {
   const query = { _id: new ObjectId(req.params.id) };
   const updates =  {
     $set: {
-      recipe: req.body.recpie,
+      recipeName: req.body.recipeName,
       ingredients: req.body.ingredients,
       instructions: req.body.instructions,
       notes: req.body.notes,
@@ -62,4 +62,4 @@ router.delete("/:id", async (req, res) => {
   res.send(result).status(200);
 });
 
-export default router
+export default router;

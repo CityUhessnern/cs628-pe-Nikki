@@ -9,7 +9,7 @@ const Recipe = (props) => (
         <td>{props.recipe.notes}</td>
         <td>
             <Link className="btn btn-Link" to={`/edit/${props.recipe._id}`}>Edit</Link>
-            <button classNae="btn btn-link"
+            <button className="btn btn-link"
                 onClick={() => {
                     props.deleteRecipe(props.recipe._id);
                 }}
@@ -49,7 +49,7 @@ export default function RecipeList() {
             method: "DELETE" 
         });
 
-        const newRecipes = recipes.filter((el) => el._id !== id);
+        const newRecipes = recipes.filter((recipe) => recipe._id !== id);
         setRecipes(newRecipes);
     }
 

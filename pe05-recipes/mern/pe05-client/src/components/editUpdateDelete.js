@@ -6,7 +6,7 @@ export default function Edit() {
         recipeName: "",
         ingredients: "",
         instructions: "",
-        note: "",
+        notes: "",
         recipes: [],        
     });
     const params = useParams();
@@ -48,10 +48,10 @@ export default function Edit() {
     async function onSubmit(e) {
         e.preventDefault();
         const editedRecipe = {
-            recipeName: "",
-            ingredients: "",
-            instructions: "",
-            notes: "",            
+            recipeName: form.recipeName,
+            ingredients: form.ingredients,
+            instructions: form.instructions,
+            notes: form.notes,            
         };
 
         // This will send a post request to update the data in the database.
